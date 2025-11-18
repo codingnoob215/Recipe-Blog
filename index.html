@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pepperoni Pizza Recipe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>The Best Pepperoni Pizza Ever!</h1>
+  <h4>Cheesy, crispy, and topped with spicy perfection</h4>
+  <h3 id="title">Recipe Overview: Prep 15 min | Cook 20 min | Serves 4</h3>
+  <!-- Table #1: Recipe Info -->
+  <table class="recipe-table">
+    
+    <tr>
+      <th>Recipe Name</th>
+      <td>Pepperoni Pizza</td>
+    </tr>
+    <tr>
+      <th>Ingredients</th>
+      <td>
+        <ul>
+          <li>1 pre-made pizza dough</li>
+          <li>1/2 cup tomato sauce</li>
+          <li>1 1/2 cups shredded mozzarella</li>
+          <li>15–20 pepperoni slices</li>
+          <li>1 tbsp olive oil</li>
+          <li>1 tsp oregano</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Steps</th>
+      <td>
+        <ol>
+          <li>Preheat oven to 450°F (230°C).</li>
+          <li>Roll out pizza dough on a lightly floured surface.</li>
+          <li>Spread tomato sauce evenly over the dough.</li>
+          <li>Top with mozzarella and pepperoni slices.</li>
+          <li>Brush edges with olive oil and sprinkle oregano.</li>
+          <li>Bake 15–20 minutes until golden brown.</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <th>Allergens</th>
+      <td>Contains gluten and dairy.</td>
+    </tr>
+    <tr>
+      <th>Nutrition Info</th>
+      <td>Per slice: 250 cal | 12g protein | 28g carbs | 10g fat</td>
+    </tr>
+    <tr>
+      <th>Tips & Variations</th>
+      <td>Try adding mushrooms, onions, or jalapeños for extra flavor!</td>
+    </tr>
+  </table>
+
+  <!-- Table #2: Gallery + p5.js Drawing -->
+  <table class="gallery-table">
+    <tr>
+      <th>Plated Pizza</th>
+      <th>Ingredients</th>
+      <th>Pepperoni Pizza Art</th>
+    </tr>
+    <tr>
+      <td><img src="pic/pizza1.jpg" alt="whole pepperoni pizza on plate" height="200px"></td>
+      <td><img src="pic/pepperonipizzaingredients.jpg" alt="ingredients on a table" height="200px"></td>
+      <td><div id="myDrawing"></div></td>
+    </tr>
+    <tr>
+      <td class="captions">Fresh out of the oven</td>
+      <td class="captions">The simple ingredients</td>
+      <td class="captions">Simple p5.js sketch of pizza</td>
+    </tr>
+  </table>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
