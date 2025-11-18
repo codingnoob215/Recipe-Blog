@@ -7,22 +7,22 @@ function setup() {
 function draw() {
   background(240, 220, 180); // background
 
-  // --- Pizza Crust ---
+  // Pizza Crust
   fill(255, 204, 120);
   stroke(150, 75, 0);
   strokeWeight(6);
   ellipse(250, 250, 380, 380); // big pizza
 
-  // --- Sauce ---
+  // Sauce
   noStroke();
   fill(200, 60, 40);
   ellipse(250, 250, 320, 320);
 
-  // --- Cheese ---
+  // Cheese
   fill(255, 220, 90);
   ellipse(250, 250, 300, 300);
 
-  // --- Pepperoni (manual placement) ---
+  // Pepperoni
   fill(180, 40, 30);
   ellipse(250, 180, 45, 45);
   ellipse(310, 220, 45, 45);
@@ -32,7 +32,7 @@ function draw() {
   ellipse(330, 300, 45, 45);
   ellipse(200, 330, 45, 45);
 
-  // --- Slice lines ---
+  // Slice lines
   stroke(255);
   strokeWeight(3);
   line(250, 250, 420, 325);
