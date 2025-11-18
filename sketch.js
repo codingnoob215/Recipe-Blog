@@ -11,7 +11,7 @@ function draw() {
   fill(255, 204, 120);
   stroke(150, 75, 0);
   strokeWeight(6);
-  ellipse(250, 250, 380, 380); // big pizza
+  ellipse(250, 250, 380, 380); 
 
   // Sauce
   noStroke();
