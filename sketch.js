@@ -1,40 +1,43 @@
 function setup() {
-  let canvas = createCanvas(320, 240);
+  let canvas = createCanvas(500, 500);
   canvas.parent('myDrawing');
-  noLoop();
+  
 }
 
 function draw() {
-  background(240, 220, 180); // crust color
+  background(240, 220, 180); // background
 
-  // Pizza base
-  fill(255, 204, 100);
+  // Pizza Crust
+  fill(255, 204, 120);
   stroke(150, 75, 0);
-  strokeWeight(4);
-  ellipse(width / 2, height / 2, 200, 200);
+  strokeWeight(6);
+  ellipse(250, 250, 380, 380); 
 
   // Sauce
-  fill(200, 50, 50);
   noStroke();
-  ellipse(width / 2, height / 2, 160, 160);
+  fill(200, 60, 40);
+  ellipse(250, 250, 320, 320);
 
   // Cheese
-  fill(255, 220, 100);
-  ellipse(width / 2, height / 2, 150, 150);
+  fill(255, 220, 90);
+  ellipse(250, 250, 300, 300);
 
-  // Pepperoni slices
+  // Pepperoni 
   fill(180, 40, 30);
-  for (let i = 0; i < 6; i++) {
-    let angle = TWO_PI / 6 * i;
-    let x = width / 2 + cos(angle) * 50;
-    let y = height / 2 + sin(angle) * 50;
-    ellipse(x, y, 30, 30);
-  }
+  ellipse(250, 180, 45, 45);
+  ellipse(310, 250, 45, 45);
+  ellipse(190, 250, 45, 45);
+  ellipse(250, 320, 45, 45);
+  ellipse(180, 200, 45, 45);
+  ellipse(330, 300, 45, 45);
+  ellipse(200, 330, 45, 45);
 
   // Slice lines
   stroke(255);
-  strokeWeight(2);
-  line(width / 2, height / 2, width, height / 2);
-  line(width / 2, height / 2, width / 4, height / 4);
-  line(width / 2, height / 2, width / 4, 3 * height / 4);
+  strokeWeight(3);
+  line(250, 250, 420, 250);
+  line(250, 250, 330, 120);
+  line(250, 250, 330, 380);
 }
+
+
